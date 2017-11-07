@@ -1,6 +1,7 @@
 var currentQuote = "", currentAuthor = "";
 
 function getQuote() {
+
   $.ajax({
      headers: {
       "X-Mashape-Key": "OivH71yd3tmshl9YKzFH7BTzBVRQp1RaKLajsnafgL2aPsfP9V"
@@ -35,6 +36,7 @@ function setRandomColor(){
 $(".button").css("background-color", c);
   $("i").css("background-color", c);
   $("#message").css("color", c);
+  $(".well").css("border-color", c);
 // $(".well").css("box-shadow", "10px 10px"+ c.toString());
 
  };
@@ -42,7 +44,6 @@ $(".button").css("background-color", c);
 $(document).ready(function(){
     $("#getMessage").click(function(){
         $(".well").fadeOut("3000").fadeIn("slow");
-      
     });
 });
 
